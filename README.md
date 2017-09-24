@@ -16,8 +16,10 @@
 * 执行build.sh
 
 1.修改/etc/hosts文件(当然，能看懂配置的话，可以修改成自己的配置)
+
 2.进入命令行进入deploy项目文件夹，执行mvn -Dmaven.test.skip=true package deploy
 （打包多个项目需要依赖的父依赖）
+
 3.公共包plat, 进入plat项目文件夹 执行mvn -Dmaven.test.skip=true package deploy
 
 (2-3两步，如果直接执行build.sh 无问题可以忽略，已经在bulid-mvn.sh中做掉了)
