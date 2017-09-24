@@ -14,19 +14,13 @@
 
 注意：此架构没有挂载数据库，需要的可以自己添加，csdn有大量的教学资源
 
+
+
 准备步骤：
 
 * 执行build.sh
 
 1.修改/etc/hosts文件(当然，能看懂配置的话，可以修改成自己的配置)
-
-2.进入命令行进入deploy项目文件夹，执行mvn -Dmaven.test.skip=true package deploy
-（打包多个项目需要依赖的父依赖）
-
-3.公共包plat, 进入plat项目文件夹 执行mvn -Dmaven.test.skip=true package deploy
-
-(2-3两步，如果直接执行build.sh 无问题可以忽略，已经在bulid-mvn.sh中做掉了)
-
 
 127.0.0.1 login.xiaotiandev.shi
 
@@ -37,6 +31,14 @@
 127.0.0.1 monitor.xiaotiandev.shi
 
 127.0.0.1 eureka.xiaotiandev.shi
+
+2.进入命令行进入deploy项目文件夹，执行mvn -Dmaven.test.skip=true package deploy
+（打包多个项目需要依赖的父依赖）
+
+3.公共包plat, 进入plat项目文件夹 执行mvn -Dmaven.test.skip=true package deploy
+
+(2-3两步，如果直接执行build.sh 无问题可以忽略，已经在bulid-mvn.sh中做掉了)
+
 
 
 启动顺序
@@ -54,7 +56,11 @@
 6.monitor. (监控站点，端口8084)
 
 
+
+
 注意: 您只有一台机器的情况下，可能需要tomcat多实例支持
+
+
 
 登陆账号密码
 
