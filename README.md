@@ -26,10 +26,15 @@
 
 
 127.0.0.1 login.xiaotiandev.shi
+
 127.0.0.1 www.xiaotiandev.shi
+
 127.0.0.1 portal.xiaotiandev.shi
+
 127.0.0.1 monitor.xiaotiandev.shi
+
 127.0.0.1 eureka.xiaotiandev.shi
+
 
 启动顺序
 
