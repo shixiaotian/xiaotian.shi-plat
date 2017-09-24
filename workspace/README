@@ -1,0 +1,9 @@
+如果你要使用tomcat多实例，那么请对每个实例的tomcat.properties进行配置
+
+需要填写3个参数
+
+java.home= # jdk目录
+tomcat.home= # tomcat 软件目录
+app.home= #多实例目录地址，即 当前tomcat.porperties地址
+
+同时，需要保证配置文件下面的端口不被占用
